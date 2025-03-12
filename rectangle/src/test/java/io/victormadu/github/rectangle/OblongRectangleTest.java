@@ -4,12 +4,15 @@
 package io.victormadu.github.rectangle;
 
 import org.junit.jupiter.api.Test;
+
+import io.victormadu.github.geometry.Rectangle;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class OblongRectangleTest {
     @Test
     void rectangeTest() {
-        var rectange = new OblongRectangle(5, 5);
+        Rectangle rectange = new OblongRectangle(5, 5);
         assertEquals(25, rectange.area());
         assertEquals(5, rectange.length());
         assertEquals(5, rectange.width());

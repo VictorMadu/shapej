@@ -3,6 +3,7 @@
  */
 package io.victormadu.github.circle;
 
+import io.victormadu.github.geometry.Circle;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -10,7 +11,7 @@ class ConcentricCircleTest {
 
     @Test
     void circleProperties() {
-        var circle = new ConcentricCircle(7);
+        Circle circle = new ConcentricCircle(7);
         assertEquals(154, circle.area(), 0.1);
         assertEquals(44, circle.perimeter(), 0.1);
         assertEquals(7, circle.raidus());
